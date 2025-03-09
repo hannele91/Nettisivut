@@ -16,11 +16,13 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  font-family: arial;
 }
 
 li {
-  float: left;font-family:arial;
- }
+  float: left;
+  font-family: arial;
+}
 
 li a {
   display: block;
@@ -28,59 +30,40 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family:arial;
+  font-family: arial;
 }
 
 li a:hover:not(.active) {
   background-color: #111;
-  font-family:arial;
+  font-family: arial;
 }
 
 .active {
   background-color: #04AA6D;
-  font-family:arial;
-}
-
-div{
-	border: 1px;
-	border-color: gray;
-	border-style: solid;
-	padding: 10px;
-	margin: 20px;
-}
- 
-.background {
-    background-image: url('Taustakuva12.jpg');
-    background-size: cover;
-    background-position: center; 
-    height: 100vh; 
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
-    color: gray;
-}
-body {
-	background-image: url('@media screen and (max-width: 768px)
-  body {
-    font-size: 14px;
-  }
-
-.container {
-    padding: 10px;
-}
-@media screen and (min-width: 769px) {
-  body {
-    font-size: 16px;
-}
-
-.container {
-    padding: 20px;
-}.
-jpg');
-	background-size: cover;
-	background-position: center;
+  
 	font-family: arial;
-	}
+  
+}
+div{
+	border:1px;
+	border-bottom-color: gray;
+	border-style:solid;
+	padding:20px;
+	margon:20px;
+}
+header{
+	background-image: linear-gradient(rgba(0,0,0.2)
+	background-position:center;
+	background-size: cover;
+}
+
+header h1{
+	font-size:60px;
+	text-align:center;
+	color: gray;
+	padding:150px 10px 150px 10px;
+}
+
 p{
 	font-family:arial; color:dark-gray;
 }
@@ -94,7 +77,7 @@ body {
 }
 
 h1 {
-    background-image: url('Taustakuva12.jpg');  
+    background-image: url('Tausta.jpg');  
     background-size: cover; 
     background-position: center;  
     height: 300px;  
@@ -108,24 +91,72 @@ h1 {
 	font-size: 2rem; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
     margin: 0;
-
-p {
-  font-family:arial;
 }
-
 img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
+</head>
+</style>
+</style>
+</head>
+<body>
+<style>
+<img src="Tausta.jpg">
+</style>
+<nav>
+	<ul>
+  <li><a href="index.html">Hannelen cv ja portfolio</a></li>
+  <li><a class="active" href="about.html">Kuka olen?</a></li>
+  <li><a href="contact.html">Työkokemus ja koulutus</a></li>
+  <li><a href="about2.html">Portfolio</a></li>
+  <li><a href="contact2.html">Ota yhteyttä</a></li>
+	</ul>
+</nav>
+<style>
+<style>
 .container {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-	gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
 }
 
 .item {
-	background: #f4f4f4;
-	padding: 10px;
+  background: #f4f4f4;
+  padding: 10px;
+}
+.hero {
+  background-image: url('Tausta.jpg');
+  background-size: cover; 
+  background-position: center; 
+  height: 100px; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  color: gray; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+body {
+  background-image: url('Tausta.jpg');
+  background-size: cover;
+  background-position: center;
+}
+      
+h1 {
+  font-size: 3em;
+  margin: 25; 
+  font-family:arial;
+  font-size: 2rem; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  margin: 0;
+}
+		
+p {
+  font-family:arial;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 @media screen and (max-width: 768px) {
   body {
@@ -144,22 +175,8 @@ img {
     padding: 20px;
 }
 
+</style>
 
-</style>
-</head>
-<body>
-<style>
-<img src="Taustakuva12.jpg">
-</style>
-<nav>
-	<ul>
-  <li><a href="index.html">Hannelen cv ja portfolio</a></li>
-  <li><a class="active" href="about.html">Kuka olen?</a></li>
-  <li><a href="contact.html">Työkokemus ja koulutus</a></li>
-  <li><a href="about2.html">Portfolio</a></li>
-  <li><a href="contact2.html">Ota yhteyttä</a></li>
-	</ul>
-</nav>
 </body>
 
 	<div class="content">
