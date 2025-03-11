@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Tyylit.css">	<div class="header">
+<div class="header">
+        <h1>Hannelen cv ja portfolio</h1>
+    </div>
+<nav>
+<ul>
+  <li><a class="active" href="index.html">Tervetuloa</a></li>
+  <li><a href="about.html">Kuka olen?</a></li>
+  <li><a href="contact.html">Työkokemus ja koulutus</a></li>
+  <li><a href="about2.html">Portfolio</a></li>
+  <li><a href="contact2.html">Ota yhteyttä</a></li>
+</ul>
+</nav>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-family: arial;
+}
+
+li {
+  float: left;
+  font-family: arial;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: arial;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+  font-family: arial;
+}
+
+.active {
+  background-color: #04AA6D;
+  
+	font-family: arial;
+  
+}
+div{
+	border:1px;
+	border-bottom-color: #151515;
+	border-style:solid;
+	padding:20px;
+	margon:20px;
+}
+header{
+	background-image: linear-gradient(rgba(0,0,0.2)
+	background-position:center;
+	background-size: cover;
+}
+
+header h1{
+	font-size:60px;
+	text-align:center;
+	color: #151515;
+	padding:150px 10px 150px 10px;
+}
+
+p{
+	font-family:arial; color:#6C6767;
+}
+
+body {
+    margin-top: 40px;    
+    margin-right: 40px;  
+    margin-bottom: 20px; 
+    margin-left: 40px;   
+	margin-color: #6C6767;
+}
+</style>
+<style>
+h1 {
+    background-image: url('alin-gavriliuc-T5h-RzUFN04-unsplash.jpg');  
+    background-size: cover; 
+    background-position: center;  
+    height: 300px;  
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    color: #424242; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+    font-size: 3em; 
+    font-family: Arial, sans-serif;
+	font-size: 2rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    margin: 0;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.kuva {
+  width: 300px;  
+  height: 200px;  
+  object-fit: contain;
+ }
+
+.hero {
+  background-image: url('alin-gavriliuc-T5h-RzUFN04-unsplash.jpg');
+  background-size: cover; 
+  background-position: center; 
+  height: 100px; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  color:#424242;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+body {
+  background-image: url('alin-gavriliuc-T5h-RzUFN04-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+      
+h1 {
+  font-size: 3em;
+  margin: 25; 
+  font-family:arial;
+  font-size: 2rem; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  margin: 0;
+}
+		
+p {
+  font-family:arial;
+ }
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .main-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .main-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .main-content p {
+        font-size: 0.8rem;
+    }
+.responsive-img {
+    width: 100%; 
+    height: auto; 
+}
+}
+ </style>
+ <style>
+}
+.chat-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 300px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            max-height: 400px;
+            z-index: 1000;
+        }
+.chat-header {
+            background-color: gray;
+            color: white;
+            padding: 10px;
+            font-weight: 500;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 8px 8px 0 0;
+        }
+.chat-messages {
+            padding: 10px;
+            flex-grow: 1;
+            overflow-y: auto;
+            max-height: 250px;
+            background-color: #fafafa;
+            border-bottom: 1px solid #ddd;
+        }
+.message {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+.message.bot {
+            background-color: #f1f1f1;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+.message.user {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px;
+            border-radius: 5px;
+            text-align: right;
+            margin-left: auto;
+        }
+		
+.chat-input {
+            display: flex;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 0 0 8px 8px;
+            border-top: 1px solid #ddd;
+        }
+
+.chat-input input {
+            width: 80%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+.chat-input button {
+            width: 15%;
+            background-color: #808080;
+            color: white;
+            padding: 8px;
+            border: none;
+            border-radius: 50%;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+.chat-input button:hover {
+            background-color: #808080;
+        }
+  </style>
+</head>
+<body>
+    <div class="chat-container">
+    
+        <div class="chat-header"">
+            <h3>Let's chat</h3>
+		</div>
+       
+        
+        <div class="chat-box" id="chat-box">
+		</div>
+ 
+        
+        <div class="chat-input">
+            <input type="text" id="chat-input" placeholder="Kirjoita viesti...">
+            <button id="send-button">Lähetä</button>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.chat-box {
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #fafafa;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.chat-box .message {
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+}
+
+.chat-box .user-message {
+    background-color: #4CAF50;
+    color: white;
+    text-align: right;
+}
+
+.chat-box .bot-message {
+    background-color: #ddd;
+    color: black;
+    text-align: left;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #f1f1f1;
+}
+
+#chat-input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#send-button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #45a049;
+}
+</style>
+<div>
+	<p class="lead"><p class="lead">Tervetuloa nettisivuilleni. Täällä on nähtävissä tämän hetkinen cv:ni ja portfolio, johon on tarkoitus kerätä sisältöä myöhemmin opintojen edetessä. Etsin kesätöitä kirjasto-/kulttuurialalta.	
+</div>
+<img src="IMG20250123145549 (1).jpg"/> <img src="thought-catalog-OJZB0VUQKKc-unsplash.jpg"> <img src="claudia-wolff-MiJTU6lqksg-unsplash.jpg"> <img src="duong-ngan-Z_Iuwob1ttY-unsplash.jpg"  alt="kuva" class="responsive-img">
+</div>
+
+<div class="footer">
+	<p>2025 Hannele Männikkö</p>
+</div>
+</body>
+
+</html>
